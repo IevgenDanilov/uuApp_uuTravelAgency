@@ -1,0 +1,19 @@
+{
+  "uuSubAppDataStore": {
+    "primary": {
+      "type": "uuAppObjectStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "travelAgency": {
+          "realization": "dao/TravelAgencyMongo"
+        },
+        "trip": {
+          "realization": "dao/TripMongo"
+        },
+        "participant": {
+          "realization": "dao/ParticipantMongo"
+        }
+      }
+    }
+  }
+}

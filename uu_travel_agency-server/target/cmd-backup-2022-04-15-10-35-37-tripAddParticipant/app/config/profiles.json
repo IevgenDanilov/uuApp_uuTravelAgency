@@ -1,0 +1,82 @@
+{
+  "{asid}": {
+    "profileList": ["AsidAuthorities","AsidExecutives","AsidLicenseOwner","Public"],
+    "useCaseMap": {}
+  },
+  "*": {
+    "profileList": ["Authorities","Executives","AwidLicenseOwner","Public"],
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "sysStateList": ["created"],
+        "profileList": ["AwidLicenseOwner"]
+      },
+      "defaultUve": {
+        "profileList": ["Public"]
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "sysStateList": ["created"],
+        "profileList": ["Public","AwidLicenseOwner"]
+      },
+      "trip/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Public"]
+      },
+      "trip/get": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "trip/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Public"]
+      },
+      "trip/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "trip/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Public"]
+      },
+      "participant/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "participant/get": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "participant/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "participant/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "participant/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "location/create": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Public"]
+      },
+      "location/get": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "location/delete": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Public"]
+      },
+      "location/list": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Executives","Public"]
+      },
+      "location/update": {
+        "sysStateList": ["active"],
+        "profileList": ["Authorities","Public"]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "product": "uu_travel_agency",
+  "version": "0.1.0",
+  "license": "License Commercial",
+  "description": {
+    "en": "",
+    "cs": ""
+  },
+  "devkit": {
+    "development": {
+      "appBoxLocationUri": "----- VALUE REQUIRED -----",
+      "appDeploymentUri": null
+    }
+  },
+  "uu_travel_agency-hi": {},
+  "uu_travel_agency-server": {}
+}

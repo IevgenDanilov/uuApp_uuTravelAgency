@@ -1,0 +1,35 @@
+{
+  "uuSubAppDataStore": {
+    "primary": {
+      "type": "uuAppObjectStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "travelAgency": {
+          "realization": "dao/TravelAgencyMongo"
+        },
+        "trip": {
+          "realization": "dao/TripMongo",
+          "maxNoI": 500000
+        },
+        "participant": {
+          "realization": "dao/ParticipantMongo",
+          "maxNoI": 5000000
+        },
+        "location": {
+          "realization": "dao/LocationMongo",
+          "maxNoI": 10000
+        }
+      }
+    },
+    "binary": {
+      "type": "uuAppBinaryStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "locationImage": {
+          "realization": "dao/LocationImageMongo",
+          "maxNoi": 1024
+        }
+      }
+    }
+  }
+}

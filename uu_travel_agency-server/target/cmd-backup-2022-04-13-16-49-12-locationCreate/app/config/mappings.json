@@ -1,0 +1,31 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/uuAppWorkspace/init": {
+        "realization": "api/controllers/TravelAgencyController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "sys/uuAppWorkspace/initUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      },
+      "trip/create": {
+        "realization": "api/controllers/TripController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "participant/create": {
+        "realization": "api/controllers/ParticipantController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      }
+    }
+  }
+}
